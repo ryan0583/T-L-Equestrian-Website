@@ -1,0 +1,65 @@
+.green {
+  padding-top: 10px;
+  background-color: #27cc58;
+  height: 50px;
+}
+
+.nopad {
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.white {
+  color: #FFFFFF;
+}
+
+.right {
+  padding-right: 10px;
+  text-align: right;
+}
+
+.logo {
+  padding-top: 25px;
+}
+
+.bodyimg {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 60pt;
+}
+
+.telephone {
+  padding-right: 5px;
+}
+
+ul {
+  padding-top: 0.4vw;
+  font-size: 1.7vw;
+}
+
+li {
+  padding-top: 1.33vw;
+  line-height: 35px;
+}
+
+a {
+  padding-right: 20px;
+}
+
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
