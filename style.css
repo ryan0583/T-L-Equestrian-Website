@@ -112,12 +112,31 @@ ul.body li {
     font-size: 40pt;
   }
 
+  h2 {
+    font-size: 15pt;
+  }
+
+  .subtitle {
+    padding-left: 5px;
+  }
+
   .header {
     padding-top: 14px;
+    padding-left: 0px;
   }
 
   .header p {
-    font-size: 3vw;
+    font-size: 3.1vw;
+    padding-left: 0px;
+    margin-left: 0px;
+  }
+
+  .col {
+    padding-left: 5px;
+  }
+
+  .right {
+    padding-right: 5px;
   }
 
   ul.body li {
