@@ -92,19 +92,42 @@ div.menu {
 }
 
 ul.body {
-  padding-top: 0.4vw;
   font-size: 1.4vw;
-}
-
-@media screen and (max-width: 992px) {
-  ul.body {
-    font-size: 2.0vw;
-  }
 }
 
 ul.body li {
   padding-top: 1.33vw;
   line-height: 35px;
+}
+
+@media screen and (max-width: 992px) {
+  ul.body {
+    padding-top: 0.2vw;
+    font-size: 2.0vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .title {
+    font-size: 40pt;
+  }
+
+  .header {
+    padding-top: 14px;
+  }
+
+  .header p {
+    font-size: 3vw;
+  }
+
+  ul.body li {
+    padding-top: 10px;
+    line-height: 15px;
+  }
+
+  ul.body {
+    font-size: 3vw;
+  }
 }
 
 a:hover {
