@@ -5,6 +5,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ei.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialScript"));</script>
     <title></title>
   </head>
   <body>
@@ -37,32 +40,40 @@
           </h1>
         </div>
       </div>
+
       <div class="row green menu">
-        <div class="col right">
-          <ul class="menu">
-            <li>
-              <a href="#home" class="white">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#gallery" class="white">
-                Gallery
-              </a>
-            </li>
-            <li>
-              <a href="" class="white">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg green pr-0 ">
+            <button class="navbar-toggler ml-auto rounded-0 white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </button>
+
+            <div class="collapse navbar-collapse green" id="navbarSupportedContent">
+              <ul class="navbar-nav ml-auto menu">
+                <li class="green">
+                  <a href="#home" class="white d-flex justify-content-end">
+                    Home
+                  </a>
+                </li>
+                <li class="green">
+                  <a href="#gallery" class="white d-flex justify-content-end">
+                    Gallery
+                  </a>
+                </li>
+                <li class="green">
+                  <a href="" class="white d-flex justify-content-end">
+                    Contact
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+        </nav>
       </div>
+
       <div class="row body">
-        <div class="nopad d-none d-lg-block col-lg-3">
-          <img class="nopad bodyimg" src="Images/horsehead.jpg">
-        </div>
-        <div class="col-xs col-lg-9">
+        <div class="col">
           <ul class="body">
             <li>A new yard offering full, holiday and retirement livery</li>
             <li>Approximately 12 miles from Shrewsbury, Telford and approximately 7 miles from Market Drayton</li>
@@ -71,7 +82,6 @@
             <li>Experienced and fully qualified staff live on site</li>
           </ul>
         </div>
-        <div class="d-none d-lg-block col-lg-1 green sidebar"></div>
       </div>
 
       <div class="row green subtitle">
@@ -80,9 +90,18 @@
       </div>
 
       <div class='embedsocial-album' data-ref="9f43e1583c42343f108e74fb6a89d0dcb0a113bf"></div>
-      <script>(function(d, s, id){var js; if (d.getElementById(id)) {return;} js = d.createElement(s); js.id = id; js.src = "https://embedsocial.com/embedscript/ei.js"; d.getElementsByTagName("head")[0].appendChild(js);}(document, "script", "EmbedSocialScript"));</script>
 
-      <div class="row green footer">
+      <div class="footer">
+        <div class="row justify-content-end green pr-3 pt-2">
+          <a href="https://www.facebook.com/T-and-L-Equestrian-110676663652870">
+            <img id = "Facebook" class="socialMedia" src="Images/facebook-white.svg"></img>
+          </a>
+        </div>
+        <div class="row justify-content-start green pt-2 pl-2">
+          <p class="text-white">
+            &copy; Ryan Griffiths <?PHP echo date("Y"); ?>
+          </p>
+        </div>
       </div>
   </body>
 </html>
