@@ -20,7 +20,7 @@ $(document).ready(function()
     var navBarPosition = $('nav:first').position();
     var navBarTop = navBarPosition.top;
 
-    if (initialNavBarTop <= winTop - 2)
+    if (initialNavBarTop <= winTop + 48)
     {
       stickNavBar();
     }
@@ -37,10 +37,9 @@ $(document).ready(function()
       return;
     }
 
-    var navBarHeight = $('nav:first').height();
     $('nav:first').addClass('sticky');
-
-    moveHeadingBehindFooter();
+    $('nav:first').removeClass('standard-shadow');
+    $('.navbar-brand:first').fadeIn();
   }
 
   function unstickNavBar()
@@ -51,29 +50,7 @@ $(document).ready(function()
     }
 
     $('nav:first').removeClass('sticky');
+    $('nav:first').addClass('standard-shadow');
     $('.navbar-brand:first').fadeOut();
-
-    moveHeadingInFrontOfFooter();
-  }
-
-  function moveHeadingInFrontOfFooter()
-  {
-    $('.heading').css('z-index', -1);
-  }
-
-  function moveHeadingBehindFooter()
-  {
-    $('.heading').css('z-index', -3);
-  }
-
-  function getNavBarHeight()
-  {
-    var navBarHeight = $('.navbar-toggler:first').height();
-    if (navBarHeight == undefined)
-    {
-      navBarHeight = $('.nav-item:first').height();
-    }
-
-    return navBarHeight;
   }
 });
