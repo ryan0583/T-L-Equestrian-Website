@@ -84,6 +84,10 @@ h1.title {
   padding-right: 5px;
 }
 
+a.navbar-brand {
+  font-family: 'Catamaran', sans-serif;
+}
+
 .navbar
 {
   z-index: 992;
