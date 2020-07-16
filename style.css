@@ -27,6 +27,10 @@
   padding:0;
 }
 
+.pad {
+  padding-top: 34px;
+}
+
 .header {
   padding-top: 10px;
   height: 50px;
