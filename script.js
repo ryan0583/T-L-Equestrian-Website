@@ -53,4 +53,19 @@ $(document).ready(function()
     $('nav:first').addClass('standard-shadow');
     $('.navbar-brand:first').fadeOut();
   }
+
+  /*smooth scroll page links*/
+  $('.nav-link').click(function(event)
+  {
+    event.preventDefault();
+
+    var navBarHeight = 85;
+    var id = $(this).attr('href');
+    var offset = $('' + id).offset();
+    var offsetTop = offset.top - navBarHeight-8;
+
+    $('html, body').animate({scrollTop: offsetTop}, 'slow');
+
+    setTimeout(function(){ $('.navbar-collapse').collapse('hide'); }, 400);
+  });
 });

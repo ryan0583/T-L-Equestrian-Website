@@ -139,6 +139,22 @@ ul.body {
   font-size: 1.4vw;
 }
 
+.contact-md {
+  padding-top: 60px;
+}
+
+.contact-sm-addr {
+  padding-top: 20px;
+}
+
+.contact-sm-tel {
+  padding-top: 15vw;
+}
+
+.contact p {
+  font-size: 14pt;
+}
+
 ul.body li {
   padding-top: 1.33vw;
   line-height: 35px;
@@ -181,10 +197,6 @@ ul.body li {
     padding-left: 5px;
   }
 
-  .right {
-    padding-right: 5px;
-  }
-
   ul.body li {
     padding-top: 10px;
     line-height: 15px;
@@ -197,6 +209,10 @@ ul.body li {
   .logo {
     padding-top: 25px;
     padding-bottom: 0px;
+  }
+
+  .contact p {
+    font-size: 3.9vw;
   }
 }
 
