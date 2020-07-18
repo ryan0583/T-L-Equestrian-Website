@@ -59,7 +59,7 @@ $(document).ready(function()
   {
     event.preventDefault();
 
-    var navBarHeight = 85;
+    var navBarHeight = 78;
     var id = $(this).attr('href');
     var offset = $('' + id).offset();
     var offsetTop = offset.top - navBarHeight-8;
